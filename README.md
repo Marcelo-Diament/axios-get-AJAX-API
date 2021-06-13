@@ -83,6 +83,25 @@ const makeRequest = (username, purpose, callback) => {
 }
 ```
 
+#### 02.02. User Tags Map
+
+Antes de tratarmos o retorno da nossa request, vamos mapear cada _tag_ HTML do nosso DOM para daí podemos populá-las.
+
+No arquivo `./assets/js/templates/userTags.js` iremos mapear os IDs dessas _tags_ através do seguinte objeto:
+
+```js
+const userTags = {
+    avatar_url: '#userAvatar',
+    bio: '#userBio',
+    location: '#userLocation',
+    name: '#userName',
+    html_url: '#userUrl',
+    followers: '#userFollowersCount',
+    following: '#userFollowingCount',
+    public_repos: '#userReposCount'
+}
+```
+
 ## \#02. Compilado
 
 _Um breve resumo para consultas rápidas e revisões_
