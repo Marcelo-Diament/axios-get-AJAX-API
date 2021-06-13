@@ -155,3 +155,73 @@ hr {
     margin: 0 auto var(--spacing-half) 0;
   }
 }
+
+/* Challenge base style */
+
+.repos {
+  background-color: var(--white);
+  border-radius: var(--spacing-half);
+  color: var(--dark);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, .3));
+  margin-bottom: var(--spacing);
+}
+
+.repo__title {
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.repo__description {
+  margin-top: var(--spacing-half);
+}
+
+.repo__url {
+  margin-bottom: var(--spacing-half);
+}
+
+.repo__infos {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: var(--spacing) auto 0;
+}
+
+.repo__info {
+  background-color: var(--highlight);
+  border: 1px solid var(--darker);
+  border-radius: var(--spacing-half);
+  color: var(--black);
+  flex: 1 0 100%;
+  font-size: var(--font-size-min);
+  margin: var(--spacing-quarter) 0;
+  padding: var(--spacing-quarter) var(--spacing-half);
+}
+
+.repo__info--language {
+  background-color: var(--light);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.repo__info::before {
+  display: contents;
+}
+
+.repo__info--created::before {
+  content: 'Criado em ';
+}
+
+.repo__info--updated::before {
+  content: 'Atualizado em ';
+}
+
+@media only screen and (min-width: 432px) {
+  .repo__infos {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .repo__info {
+    flex: 0 1 auto;
+    margin: var(--spacing-quarter) var(--spacing-half) var(--spacing-quarter) 0;
+  }
+}
