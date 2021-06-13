@@ -1,0 +1,157 @@
+:root {
+  --white: #fff;
+  --light: #f3f3f3;
+  --dark: #3f3f3f;
+  --darker: #333;
+  --black: #000;
+  --primary: #5900ff;
+  --primary-dark: #4000bb;
+  --highlight: #ffaa00;
+  --spacing: 16px;
+  --spacing-double: calc(var(--spacing)*2);
+  --spacing-half: calc(var(--spacing)/2);
+  --spacing-quarter: calc(var(--spacing)/4);
+  --font-size-default: 16px;
+  --font-size-min: .85rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-default);
+}
+
+body {
+  background-color: var(--light);
+  min-height: 100vh;
+}
+
+header,
+main,
+section {
+  padding: var(--spacing);
+}
+
+a {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--light);
+  margin: var(--spacing) var(--spacing-double);
+}
+
+[target="_blank"]::after {
+  content: '\29C9';
+  font-size: .5rem;
+  vertical-align: super;
+}
+
+.user {
+  background-color: var(--white);
+  border-radius: var(--spacing-half);
+  color: var(--dark);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, .3));
+  margin-bottom: var(--spacing);
+}
+
+.user__details {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.user__avatar {
+  border-radius: 50%;
+  margin: var(--spacing) auto;
+}
+
+.user__name {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.user__bio {
+  padding: var(--spacing-double);
+  text-align: left;
+}
+
+.user__info {
+  font-size: var(--font-size-min);
+}
+
+.counters {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: var(--spacing) 0 var(--spacing-quarter);
+}
+
+.counter {
+  background-color: var(--highlight);
+  border: 1px solid var(--darker);
+  border-radius: var(--spacing-half);
+  color: var(--black);
+  flex: 1 0 100%;
+  font-size: .75rem;
+  margin: var(--spacing-quarter) 0;
+  padding: var(--spacing-quarter) var(--spacing-quarter);
+}
+
+.counter::before {
+  display: contents;
+}
+
+.counter--following::before {
+  content: 'Seguindo: ';
+}
+
+.counter--followers::before {
+  content: 'Seguidores: ';
+}
+
+.counter--repos::before {
+  content: 'Repositórios: ';
+}
+
+
+.btn {
+  background-color: var(--primary);
+  border: 1px solid var(--primary-dark);
+  border-radius: var(--spacing-half);
+  color: var(--white);
+  font-size: var(--font-size-default);
+  margin: var(--spacing) auto 0;
+  padding: var(--spacing-half) var(--spacing);
+  transition: background-color .6s ease-out;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 432px) {
+  .counters {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: var(--spacing) 0 var(--spacing-quarter);
+  }
+
+  .counter {
+    flex: 0 1 auto;
+    margin: 0 var(--spacing-quarter) var(--spacing-quarter) 0;
+  }
+
+  .btn {
+    margin: 0 auto var(--spacing-half) 0;
+  }
+}
