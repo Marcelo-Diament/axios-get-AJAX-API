@@ -132,6 +132,30 @@ const displayUserDetails = details => {
 }
 ```
 
+#### 02.04. Main Script
+
+Nos resta executarmos tudo o que elaboramos até aqui. Faremos isso através do arquivo `./assets/js/main.js` , no qual importaremos e executaremos os métodos necessários para exibirmos as informações de um usuário.
+
+Para deixarmos nossa aplicação um pouco mais dinâmica sem acrescentarmos uma camada de complexidade ao projeto, capturaremos o `username` a partir de um `prompt()` .
+
+```js
+import makeRequest from './api/makeRequest.js'
+import {
+    displayUserDetails
+} from './inc/user.js'
+
+const loadAndShowUserDetails = name => makeRequest(name, 'user', displayUserDetails)
+
+const loadContent = name => {
+    loadAndShowUserDetails(name)
+}
+
+window.onload = () => {
+    const name = prompt('Digite o nome do usuário')
+    name && loadContent(name)
+}
+```
+
 ## \#02. Compilado
 
 _Um breve resumo para consultas rápidas e revisões_
