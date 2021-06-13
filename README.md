@@ -316,7 +316,7 @@ _Confira alguns links interessantes para aprofundar-se no tema!_
 
 * [Lista de APIs Públicas | public-apis (GitHub)](https://github.com/public-apis/public-apis)
 
-*[JSON Viewer | Extensão para visualização de JSON no browser](https://chrome.google.com/webstore/detail/json-viewer/aimiinbnnkboelefkjlenlgimcabobli?hl=pt-BR)
+* [JSON Viewer | Extensão para visualização de JSON no browser](https://chrome.google.com/webstore/detail/json-viewer/aimiinbnnkboelefkjlenlgimcabobli?hl=pt-BR)
 
 ---
 
