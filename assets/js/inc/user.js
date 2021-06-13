@@ -1,0 +1,1 @@
+// Responsável por renderizar as informações no DOM
