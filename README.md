@@ -51,7 +51,33 @@ Vamos organizar nossos arquivos em pastas. A arquitetura de pastas e arquivos fi
 | ./assest/js/templates/ | userRepo.js | Mapa e trecho HTML referente aos repositórios do usuário |
 | ./assest/js/templates/ | userTags.js | Mapa de informações do usuário no DOM (via IDs) |
 
-Nesse momento só definiremos de fato os arquivos `./assets/js/main.js` e `./assets/js/helpers/general.js`. Os demais arquivos serão criados apenas com um comentário sobre sua responsabilidade. Ainda, alguns arquivos e trechos de código (referentes ao desafio) serão incluidos posteriormente (ainda que seus estilos já estejam previstos parcialmente no CSS).
+Nesse momento só definiremos de fato os arquivos `./assets/js/main.js` e `./assets/js/helpers/general.js` . Os demais arquivos serão criados apenas com um comentário sobre sua responsabilidade. Ainda, alguns arquivos e trechos de código (referentes ao desafio) serão incluidos posteriormente (ainda que seus estilos já estejam previstos parcialmente no CSS).
+
+### 02. Making Request with Axios
+
+Nossa função receberá 3 argumentos: `username` , `purpose` e `callback` .
+
+O primeiro argumento, define de qual usuário requisitaremos as informações (parte do _endpoint_ a ser construído).
+
+Já o segundo, define se consultaremos os detalhes do usuário ou seus repositórios (a função será feita de modo a permitir a construção de outros _endpoints_).
+
+E o `callback` , na mais é do que a função que definirá o que será feito com a resposta recebida.
+
+```js
+const makeRequest = (username, purpose, callback) => {
+    let endpoint = `${username}`
+    switch (purpose) {
+        case 'repos':
+            endpoint += `/repos?type=public&sort=updated&direction=desc`
+            break
+        default:
+            endpoint
+    }
+    axios.get(`https://api.github.com/users/${endpoint}`)
+        .then(response => callback(response.data))
+        .catch(error => console.error(error))
+}
+```
 
 ## \#02. Compilado
 
