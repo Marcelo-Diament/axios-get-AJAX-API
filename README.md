@@ -3,6 +3,9 @@
 # Axios GET AJAX API
 
 **OBTENÇÃO DE DADOS (GET) DE UMA API COM JS, NO FRONT-END**
+
+_Criado em 13 de Junho de 2021 por Marcelo Diament. Material para consulta: [Notion](https://www.notion.so/marcelodiament/Get-it-with-AJAX-1b13acc2dbb14c38af65896d34431a9d)_
+
 ___
 
 ![Comunicação entre Plataformas](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7d356a55-e77d-44bd-a3ad-a5e3e3f8c778%2Fapi-objetivo.png?table=block&id=16268c4f-4d3a-47bb-aefe-37a0a4c41ffa&spaceId=fa024bdf-23e1-41d2-b1a2-6bfa1a2aa953&width=3000&userId=&cache=v2µ)
@@ -276,6 +279,8 @@ Deixamos o HTML e o CSS preparados, para que possa focar quase que totalmente no
 > Atenção! Repare que agora estamos tratando de um array de objetos, ou seja, receberemos mais de um objeto - e não podemos usar o mesmo ID para diferentes elementos no mesmo documento, o ID deve ser único. 🧐
 
 [Link do exercício no CodePen](https://codepen.io/marcelo-diament/pen/ZEemQqX)
+
+**Pra refletir:** será que vale a pena realizar diversas _requests_ para receber os mesmos dados? Como poderíamos melhorar isso?
 
 ## Links Complementares
 
