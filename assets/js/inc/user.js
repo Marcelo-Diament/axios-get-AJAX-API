@@ -20,4 +20,12 @@ const displayUserDetails = details => {
   }
 }
 
-export { displayUserDetails }
+const displayUserRepos = repos => {
+  let reposContent = ''
+  for (let repo of repos) {
+    reposContent += userRepo(repo)
+  }
+  selector('.repos')[0].innerHTML = reposContent
+}
+
+export { displayUserDetails, displayUserRepos }
