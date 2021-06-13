@@ -280,6 +280,8 @@ Deixamos o HTML e o CSS preparados, para que possa focar quase que totalmente no
 
 [Link do exercício no CodePen](https://codepen.io/marcelo-diament/pen/ZEemQqX)
 
+[Link para baixar o repositório](https://github.com/Marcelo-Diament/axios-get-AJAX-API/archive/refs/tags/v1.0.0.zip) com a base do desafio pronta
+
 **Pra refletir:** será que vale a pena realizar diversas _requests_ para receber os mesmos dados? Como poderíamos melhorar isso?
 
 ## Links Complementares
