@@ -15,7 +15,7 @@ O objetivo dessa aula é conseguirmos consumir dados de uma aplicação externa 
 
 Para podermos declarar nossas dependências, vamos criar um arquivo `package.json` através do seguinte comando:
 
-``` sh
+```sh
 npm init
 ```
 
@@ -30,6 +30,27 @@ npm i axios --save
 ```
 
 > Ao baixar, clonar ou dar um fork no repositório, basta executar `npm install` para instalar a dependência.
+
+#### 01.03. Project Architecture
+
+Vamos organizar nossos arquivos em pastas. A arquitetura de pastas e arquivos ficará assim:
+
+| Caminho | Arquivo | Responsabilidade |
+| ------ | ------ | ------ |
+| ./ | index.html | Documento HTML principal da aplicação |
+| ./ | LICENSE | Sobre a licença do projeto (_default_) |
+| ./ | package.json | Configurações do projeto (como dependências) |
+| ./ | package-lock.json | Árvore de dependências |
+| ./ | .gitignore | Listagem de arquivos a serem ignorados no repositório |
+| ./node_modules/ | * | Dependências do projeto (módulos/pacotes) |
+| ./assets/css/ | style.css | Estilos da aplicação |
+| ./assets/js/ | main.js | Execução do _script_ customizado |
+| ./assets/js/api | makeRequest.js | Responsável por criar e executar a _request_ |
+| ./assets/js/helpers | general.js | Funções de apoio genéricas |
+| ./assets/js/inc/ | user.js | Popular documento HTML com informações recebidas da API |
+| ./assest/js/templates/ | userRepo.js | Mapa e trecho HTML referente aos repositórios do usuário |
+| ./assest/js/templates/ | userTags.js | Mapa de informações do usuário no DOM (via IDs) |
+
 
 ## \#02. Compilado
 
