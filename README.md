@@ -21,6 +21,15 @@ npm init
 
 Podemos configurar o arquivo da maneira que preferirsmo (ou incluir a opção `-y` para responder _yes_ e manter todas as propriedades com o valor _default_).
 
+#### 01.02. Axios Install
+
+Agora vamos instalar o **axios** como uma dependência:
+
+```sh
+npm i axios --save
+```
+
+> Ao baixar, clonar ou dar um fork no repositório, basta executar `npm install` para instalar a dependência.
 
 ## \#02. Compilado
 

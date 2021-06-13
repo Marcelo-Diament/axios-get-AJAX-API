@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Marcelo-Diament/axios-get-AJAX-API/issues"
   },
-  "homepage": "https://github.com/Marcelo-Diament/axios-get-AJAX-API#readme"
+  "homepage": "https://github.com/Marcelo-Diament/axios-get-AJAX-API#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
