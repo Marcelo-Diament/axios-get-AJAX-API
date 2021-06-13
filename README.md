@@ -13,6 +13,8 @@ O objetivo dessa aula é conseguirmos consumir dados de uma aplicação externa 
 
 ### 01. Projetc Setup
 
+[branch: feature/project-setup](https://github.com/Marcelo-Diament/axios-get-AJAX-API/tree/feature/project-setup)
+
 #### 01.01. Project Init
 
 Para podermos declarar nossas dependências, vamos criar um arquivo `package.json` através do seguinte comando:
@@ -56,6 +58,8 @@ Vamos organizar nossos arquivos em pastas. A arquitetura de pastas e arquivos fi
 Nesse momento só definiremos de fato os arquivos `./assets/js/main.js` e `./assets/js/helpers/general.js` . Os demais arquivos serão criados apenas com um comentário sobre sua responsabilidade. Ainda, alguns arquivos e trechos de código (referentes ao desafio) serão incluidos posteriormente (ainda que seus estilos já estejam previstos parcialmente no CSS).
 
 ### 02. Get User Details
+
+[branch: feature/get-user-details](https://github.com/Marcelo-Diament/axios-get-AJAX-API/tree/feature/get-user-details)
 
 #### 02.01. Make Request
 
