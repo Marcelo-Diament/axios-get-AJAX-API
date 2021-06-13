@@ -1,0 +1,1 @@
+// Responsável por mapear os IDs dos elementos referentes ao usuário no DOM
