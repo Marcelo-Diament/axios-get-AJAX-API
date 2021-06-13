@@ -1,0 +1,1 @@
+// Responsável por realizar a request AJAX via axios
