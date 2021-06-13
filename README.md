@@ -102,6 +102,36 @@ const userTags = {
 }
 ```
 
+#### 02.03. Display User Details
+
+Com os dados da resposta da nossa _request_ em mãos e elementos HTML devidamente mapeados, chegou a hora de unirmos os pontos!
+
+Vamos criar uma função no arquivo `./assets/js/inc/user.js` para renderizar as informações do usuário.
+
+```js
+import {
+    selector
+} from '../helpers/general.js'
+import userTags from '../templates/userTags.js'
+
+const displayUserDetails = details => {
+    for (let userTag in userTags) {
+        const prop = selector(userTags[userTag]),
+            value = details[userTag]
+        switch (userTag) {
+            case 'avatar_url':
+                prop.setAttribute('src', value)
+                break
+            case 'html_url':
+                prop.setAttribute('href', value)
+                break
+            default:
+                prop.innerText = value
+        }
+    }
+}
+```
+
 ## \#02. Compilado
 
 _Um breve resumo para consultas rápidas e revisões_
