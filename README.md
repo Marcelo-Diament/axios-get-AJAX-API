@@ -9,6 +9,19 @@ O objetivo dessa aula é conseguirmos consumir dados de uma aplicação externa 
 
 ## \#01. Live Coding
 
+### 01. Projetc Setup
+
+#### 01.01. Project Init
+
+Para podermos declarar nossas dependências, vamos criar um arquivo `package.json` através do seguinte comando:
+
+``` sh
+npm init
+```
+
+Podemos configurar o arquivo da maneira que preferirsmo (ou incluir a opção `-y` para responder _yes_ e manter todas as propriedades com o valor _default_).
+
+
 ## \#02. Compilado
 
 _Um breve resumo para consultas rápidas e revisões_

@@ -1,0 +1,27 @@
+{
+  "name": "axios-get-ajax-api",
+  "version": "0.1.0",
+  "description": "Uma prática para realizarmos uma consulta (GET) numa API externa (pública) usando o AJAX através do axios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelo-Diament/axios-get-AJAX-API.git"
+  },
+  "keywords": [
+    "js",
+    "api",
+    "get",
+    "ajax",
+    "promise",
+    "axios"
+  ],
+  "author": "Marcelo Diament",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcelo-Diament/axios-get-AJAX-API/issues"
+  },
+  "homepage": "https://github.com/Marcelo-Diament/axios-get-AJAX-API#readme"
+}
