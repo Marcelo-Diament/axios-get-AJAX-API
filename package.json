@@ -1,6 +1,6 @@
 {
   "name": "axios-get-ajax-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Uma prática para realizarmos uma consulta (GET) numa API externa (pública) usando o AJAX através do axios.",
   "main": "index.js",
   "scripts": {
