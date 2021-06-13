@@ -55,7 +55,7 @@ Vamos organizar nossos arquivos em pastas. A arquitetura de pastas e arquivos fi
 | ./assest/js/templates/ | userRepo.js | Mapa e trecho HTML referente aos repositórios do usuário |
 | ./assest/js/templates/ | userTags.js | Mapa de informações do usuário no DOM (via IDs) |
 
-Nesse momento só definiremos de fato os arquivos `./assets/js/main.js` e `./assets/js/helpers/general.js` . Os demais arquivos serão criados apenas com um comentário sobre sua responsabilidade. Ainda, alguns arquivos e trechos de código (referentes ao desafio) serão incluidos posteriormente (ainda que seus estilos já estejam previstos parcialmente no CSS).
+Nesse momento só definiremos de fato os arquivos `./assets/js/main.js` e `./assets/js/helpers/general.js` . Os demais arquivos serão criados apenas com um comentário sobre sua responsabilidade. Ainda, alguns arquivos e trechos de código (referentes ao desafio) serão incluídos posteriormente (ainda que seus estilos já estejam previstos parcialmente no CSS).
 
 ### 02. Get User Details
 
