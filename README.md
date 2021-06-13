@@ -11,7 +11,7 @@ O objetivo dessa aula é conseguirmos consumir dados de uma aplicação externa 
 
 ## \#01. Live Coding
 
-### 01. Projetc Setup
+### 01. Project Setup
 
 [branch: feature/project-setup](https://github.com/Marcelo-Diament/axios-get-AJAX-API/tree/feature/project-setup)
 
@@ -23,7 +23,7 @@ Para podermos declarar nossas dependências, vamos criar um arquivo `package.jso
 npm init
 ```
 
-Podemos configurar o arquivo da maneira que preferirsmo (ou incluir a opção `-y` para responder _yes_ e manter todas as propriedades com o valor _default_).
+Podemos configurar o arquivo da maneira que preferirmos (ou incluir a opção `-y` para responder _yes_ e manter todas as propriedades com o valor _default_).
 
 #### 01.02. Axios Install
 
@@ -49,8 +49,8 @@ Vamos organizar nossos arquivos em pastas. A arquitetura de pastas e arquivos fi
 | ./node_modules/ | * | Dependências do projeto (módulos/pacotes) |
 | ./assets/css/ | style.css | Estilos da aplicação |
 | ./assets/js/ | main.js | Execução do _script_ customizado |
-| ./assets/js/api | makeRequest.js | Responsável por criar e executar a _request_ |
-| ./assets/js/helpers | general.js | Funções de apoio genéricas |
+| ./assets/js/api/ | makeRequest.js | Responsável por criar e executar a _request_ |
+| ./assets/js/helpers/ | general.js | Funções de apoio genéricas |
 | ./assets/js/inc/ | user.js | Popular documento HTML com informações recebidas da API |
 | ./assest/js/templates/ | userRepo.js | Mapa e trecho HTML referente aos repositórios do usuário |
 | ./assest/js/templates/ | userTags.js | Mapa de informações do usuário no DOM (via IDs) |
