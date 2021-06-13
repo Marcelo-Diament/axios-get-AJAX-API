@@ -2,6 +2,7 @@
 
 import { selector } from '../helpers/general.js'
 import userTags from '../templates/userTags.js'
+import userRepo from '../templates/userRepo.js'
 
 const displayUserDetails = details => {
   for (let userTag in userTags) {
