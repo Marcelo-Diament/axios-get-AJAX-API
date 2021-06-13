@@ -1,3 +1,5 @@
+![Repo Cover](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7088efb4-ad25-4882-85aa-b32ba85a9626%2Fapi-bg-b.png?table=block&id=1b13acc2-dbb1-4c38-af65-896d34431a9d&width=3840&userId=&cache=v2)
+
 # Axios GET AJAX API
 
 **OBTENÇÃO DE DADOS (GET) DE UMA API COM JS, NO FRONT-END**
@@ -53,7 +55,9 @@ Vamos organizar nossos arquivos em pastas. A arquitetura de pastas e arquivos fi
 
 Nesse momento só definiremos de fato os arquivos `./assets/js/main.js` e `./assets/js/helpers/general.js` . Os demais arquivos serão criados apenas com um comentário sobre sua responsabilidade. Ainda, alguns arquivos e trechos de código (referentes ao desafio) serão incluidos posteriormente (ainda que seus estilos já estejam previstos parcialmente no CSS).
 
-### 02. Making Request with Axios
+### 02. Get User Details
+
+#### 02.01. Make Request
 
 Nossa função receberá 3 argumentos: `username` , `purpose` e `callback` .
 
